@@ -40,9 +40,9 @@ app.whenReady().then(() => {
     })
 
     app.on('open-url', (event, url) => {
-        dialog.showErrorBox('欢迎回来', `你好`)
+        dialog.showErrorBox('nnertac', `欢迎使用nnertac`)
     })
 })
 app.commandLine.appendSwitch('--enable-features', 'OverlayScrollbar')
 
-console.log('welcome to electron')
+console.log('welcome to nnertac')

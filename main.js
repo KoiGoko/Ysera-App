@@ -8,22 +8,18 @@ const createWindow = () => {
         height: 720,
         minHeight: 600,
         minWidth: 1020,
-
         autoHideMenuBar: true,
         titleBarStyle: 'hidden',
         titleBarOverlay: {
-            color: 'white',
+            color: '#f6f8fc',
             symbolColor: 'black'
         },
         webPreferences: {
             preload: 'preload.js'
         },
-
-
     })
     ipcMain.handle('ping', () => 'pong')
     win.loadFile('index.html')
-
 }
 
 app.whenReady().then(() => {
@@ -46,3 +42,5 @@ app.whenReady().then(() => {
 app.commandLine.appendSwitch('--enable-features', 'OverlayScrollbar')
 
 console.log('welcome to nnertac')
+
+
